@@ -12,15 +12,15 @@
 		public $carModel;
 		public $carYear;
 
-		function __construct($carName, $carType, $carModel, $carYear)
+		function __construct($Name, $carType, $carModel, $carYear)
 		{
-			$this->carName = $carName;
+			$this->carName = $Name;
 			$this->carType = $carType;
 			$this->carModel = $carModel;
 			$this->carYear = $carYear;
 		}
 		public function nameCar(){
-			$car = "My car is a ". $this->carName. " and the type is ". $this->carType. " and the model is ". $this->carModel. ". And I bought it in ". $this->carYear. "<br>";
+			$car = "My car is a ". $this->carName. " and the type is ". $this->carType. " and the model is ". $this->carModel. ". And I bought it in ". $this->carYear. ".<br>";
 			return $car;
 		}
 	}
