@@ -24,11 +24,16 @@
 			return $bookString; 
 		}
 	}
-	$bookArray[0] = new Books("Harry Potter", "Fantasy", "J.K.R", "15.00");
-	$bookArray[1] = new Books("Harry Pooootter", "Fantasy", "J.K.R", "15.00");
+	$totalbooks = 0;
+	$bookArray[0] = new Books("Harry Potter", "Fantasy", "J.K.R", "20.00");
+	$bookArray[1] = new Books("Harry Pooootter", "Fantasy", "J.K.R", "10.00");
+	$bookArray[2] = new Books("Harry Potter is strange", "Fantasy", "J.K.R", "19.00");
+	$bookArray[3] = new Books("Harry stinks", "Fantasy", "J.K.R", "14.00");
 	foreach($bookArray as $value){
 		echo $value->createString(); 
+		$totalbooks++;
 	}
+		echo "You have ". $totalbooks. " books in total";
 	?>
 </body>
 </html>
